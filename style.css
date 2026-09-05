@@ -356,6 +356,19 @@
             line-height: 1.8;
         }
 
+        /* Perbaikan Tombol Header */
+        .header-cta {
+            padding: 0.5rem 1.2rem !important;
+            font-size: 0.875rem !important;
+            color: var(--white) !important;
+            text-decoration: none !important;
+            z-index: 10 !important; /* Pastikan teks di atas elemen lain */
+        }
+
+        .header-cta:hover {
+            color: var(--white) !important;
+        }
+
         /* ============================================
                    ORGANIC / MELTING SHAPES
                    ============================================ */
@@ -400,6 +413,8 @@
             position: relative;
             overflow: hidden;
             letter-spacing: 0.02em;
+            position: relative;
+            z-index: 1;
         }
 
         .btn::before {
@@ -412,6 +427,7 @@
             background: rgba(255, 255, 255, 0.2);
             transition: left var(--transition-smooth);
             border-radius: 100px;
+            z-index: -1;
         }
 
         .btn:hover::before,
